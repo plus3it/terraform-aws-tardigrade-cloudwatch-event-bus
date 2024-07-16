@@ -1,0 +1,19 @@
+name: Create GitHub Release
+
+on:
+  # Run on demand
+  workflow_dispatch:
+
+  # Run on push to main when .bumpversion.cfg version is updated
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - .bumpversion.cfg
+
+jobs:
+  release:
+    uses: plus3it/actions-workflows/.github/workflows/release.yml@9007628375ab63a531541d305dc61375ef0c8215
+    secrets:
+      release-token: ${{ secrets.GH_RELEASES_TOKEN }}
