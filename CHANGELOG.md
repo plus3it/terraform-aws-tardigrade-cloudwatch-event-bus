@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### [1.0.0](https://github.com/plus3it/terraform-aws-tardigrade-cloudwatch-event-bus/releases/tag/1.0.0)
 
-**Released**: {{ 2024.07.16 }}
+**Released**: 2024.07.16
 
 **Summary**:
 
